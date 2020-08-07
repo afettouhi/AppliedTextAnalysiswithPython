@@ -85,8 +85,8 @@ if __name__ == '__main__':
     corpus = PickledCorpusReader('../data/sample')
     loader = CorpusLoader(corpus, 12)
 
-    docs = loader.documents(0, test=True)
-    labels = loader.labels(0, test=True)
+    docs = loader.documents()
+    labels = loader.labels()
     # print(next(docs)[0][0][0])
     normal = TextNormalizer()
     normal.fit(docs, labels)

@@ -10,7 +10,8 @@ def tokenize(text):
     text = text.lower()
 
     for token in nltk.word_tokenize(text):
-        if token in string.punctuation: continue
+        if token in string.punctuation:
+            continue
         yield stem.stem(token)
 
 

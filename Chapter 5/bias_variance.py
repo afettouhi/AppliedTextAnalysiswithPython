@@ -14,7 +14,7 @@ Yvar = 5 ** X
 Ybias = (1/5) ** X
 Yerr = Ybias + Yvar
 
-fig = plt.figure(figsize=(9,6))
+fig = plt.figure(figsize=(9, 6))
 axe = fig.add_subplot(111)
 
 axe.plot(X, Yerr, '-', color="#222222", label='Total Error')

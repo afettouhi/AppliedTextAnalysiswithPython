@@ -20,6 +20,7 @@ def cooccurrence(text, cast):
                     cooccurring[pair] += 1
     return cooccurring
 
+
 def matrix(text, cast):
     mtx = []
     for first in cast:
@@ -99,7 +100,6 @@ if __name__ == '__main__':
         # ax2.set_xlabel("Alphabetically")
         # plt.imshow(alpha_mtx, norm=matplotlib.colors.LogNorm(), interpolation='nearest', cmap='YlOrBr')
         # plt.show()
-
 
         #
         # ##############################################
